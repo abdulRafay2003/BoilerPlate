@@ -14,6 +14,7 @@ import {
 import {Metrix, Colors, Fonts, Images, FontType, Utills} from '../../config';
 import {CustomText, RoundImageContainer} from '..';
 import {RoundImageContainerProps} from '../RoundImageContainer';
+import utills from '../../config/utills';
 
 type PrimaryButtonProps = TouchableOpacityProps &
   RoundImageContainerProps & {
@@ -35,7 +36,7 @@ export const SecondaryButton: FC<PrimaryButtonProps> = ({
   disabled,
   width = '100%',
   color = Utills.selectedThemeColors().Base,
-  textColor = '#696969',
+  textColor = utills.selectedThemeColors().PrimaryTextColor,
   customStyles,
   isIcon,
   source,

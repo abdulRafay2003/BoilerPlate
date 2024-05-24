@@ -78,30 +78,6 @@ export const ProfileScreen: React.FC<ProfileScreenProps> = ({}) => {
       <CustomText.ExtraLargeBoldText>
         {t('profile')}
       </CustomText.ExtraLargeBoldText>
-      <ScrollView>
-        {/* <PrimaryButton
-          title={t('Logout')}
-          onPress={() => dispatch(AuthActions.loginSuccess(false))}
-        />
-        <Switch
-          trackColor={{
-            false: Utills.selectedThemeColors().PrimaryColorOpacity(),
-            true: Utills.selectedThemeColors().Primary,
-          }}
-          thumbColor={'#ffffff'}
-          ios_backgroundColor={Utills.selectedThemeColors().PrimaryColorOpacity()}
-          onValueChange={toggleDrakMode}
-          value={darkMode}
-        /> */}
-        {CardData.map((option, index) => (
-          <NormalCardComponent
-            key={index}
-            image={option.image}
-            text={option.text}
-            icon={option.icon}
-          />
-        ))}
-      </ScrollView>
     </MainContainer>
   );
 };

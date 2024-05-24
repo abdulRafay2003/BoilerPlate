@@ -6,7 +6,6 @@ import createSagaMiddleware from 'redux-saga';
 
 import rootReducer from './reducers';
 import * as actionCreators from './actions';
-import {rootSaga} from './saga';
 
 const sagaMiddleware = createSagaMiddleware();
 const middlewares = [sagaMiddleware];
@@ -35,7 +34,7 @@ export default function configureStore(preloadedState: any, window: any) {
   const persistor = persistStore(store);
   return {
     persistor,
-    runSaga: sagaMiddleware.run(rootSaga),
+    runSaga: sagaMiddleware.run,
     store,
   };
 }

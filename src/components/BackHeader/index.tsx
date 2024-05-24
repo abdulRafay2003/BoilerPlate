@@ -10,8 +10,9 @@ import {
   ViewStyle,
   ImageStyle,
 } from 'react-native';
-import {Colors, Images, Metrix, NavigationService} from '../../config';
+import {Colors, FontType, Images, Metrix, NavigationService} from '../../config';
 import {CustomText} from '..';
+import { normalizeFont } from '../../config/metrix';
 
 type BackHeaderProps = {
   heading?: string;
@@ -49,7 +50,7 @@ export const BackHeader: React.FC<BackHeaderProps> = ({
         {isBoldHeading ? (
           <CustomText.LargeBoldText>{heading}</CustomText.LargeBoldText>
         ) : (
-          <CustomText.LargeSemiBoldText customStyle={{color:Colors.Base}}>{heading}</CustomText.LargeSemiBoldText>
+          <CustomText.LargeSemiBoldText customStyle={{color:Colors.Base,fontSize:normalizeFont(18)}}>{heading}</CustomText.LargeSemiBoldText>
         )}
       </View>
     </View>

@@ -21,6 +21,7 @@ import {NavigationScreenProps} from '../../propTypes';
 import {Text} from 'react-native';
 import {Images, Metrix} from '../../../config';
 import metrix from '../../../config/metrix';
+import utills from '../../../config/utills';
 
 const data = {
   heading: 'About us',
@@ -68,7 +69,7 @@ export const NavigationScreen: React.FC<NavigationScreenProps> = ({}) => {
         heading="About us"
         backArrow={true}
         customeStyle={{
-          backgroundColor: '#339966',
+          backgroundColor: utills.selectedThemeColors().Primary,
           paddingHorizontal: Metrix.HorizontalSize(25),
           height: Metrix.VerticalSize(80),
           paddingTop: Metrix.VerticalSize(45),

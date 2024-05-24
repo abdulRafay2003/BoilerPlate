@@ -5,8 +5,9 @@ import {
   TouchableOpacity,
   View,
   ImageProps,
+  useColorScheme,
 } from 'react-native';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   createDrawerNavigator,
   DrawerItem,
@@ -28,12 +29,21 @@ import {Images, Metrix, NavigationService, RouteNames, Utills} from '../config';
 import {TabStack} from './TabStack';
 import {CustomText} from '../components';
 import {useNavigation} from '@react-navigation/native';
-import {useDispatch} from 'react-redux';
-import {AuthActions} from '../redux/actions';
+import {useDispatch, useSelector} from 'react-redux';
+import {AuthActions, HomeActions} from '../redux/actions';
+import {RootState} from '../redux/reducers';
+import RNRestart from 'react-native-restart';
+import utills from '../config/utills';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerContent: React.FC = () => {
+  const darkMode = useSelector((state: RootState) => state?.home?.darkMode);
+  const toggleDrakMode = () => {
+    dispatch(HomeActions.setDarkMode()); // Dispatch the toggleTheme action
+    setTimeout(() => RNRestart.restart(), 300);
+  };
+
   const dispatch = useDispatch();
   const DrawerElement = [
     {
@@ -46,7 +56,7 @@ const DrawerContent: React.FC = () => {
     {
       label: 'Best Points Program Members',
       icon: Images.Coins,
-      onPress: () => {},
+      onPress: toggleDrakMode,
     },
     {
       label: 'Invitation',
@@ -122,6 +132,7 @@ const DrawerContent: React.FC = () => {
                   style={{
                     width: Metrix.HorizontalSize(17),
                     height: Metrix.VerticalSize(17),
+                    tintColor: utills.selectedThemeColors().PrimaryTextColor,
                   }}
                   resizeMode="contain"
                 />
@@ -131,7 +142,7 @@ const DrawerContent: React.FC = () => {
                 // width:"100%",
                 // borderWidth:1,
                 fontSize: 14,
-                color: '#222',
+                color: utills.selectedThemeColors().PrimaryTextColor,
               }}
               onPress={option.onPress}
               style={{width: '80%'}}
@@ -268,6 +279,7 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 20,
     fontWeight: 'bold',
+    color: utills.selectedThemeColors().PrimaryTextColor,
   },
   caption: {
     fontSize: 14,
