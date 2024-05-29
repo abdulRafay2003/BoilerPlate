@@ -2,14 +2,13 @@ import {Platform, Alert, Linking, PermissionsAndroid} from 'react-native';
 import moment from 'moment';
 import DataHandler from '../../services/dataHandler.service';
 import {IMAGE_BASE_URL} from '../../services/config';
-import AsyncStorage from "@react-native-async-storage/async-storage";
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const TIME1 = 'HH:mm';
 
 class Util {
   getCurrentUserAccessToken(): string | undefined {
-    return DataHandler?.getStore()?.getState()?.user?.userDetail?.accessToken;
+    return DataHandler?.getStore()?.getState()?.home.userDetails?.token;
   }
 
   getCurrentUserUUID(): string | undefined {
@@ -108,7 +107,7 @@ export const getObjectByKeys = <T extends {[key: string]: any}>(
 };
 
 export const setTokenInStorage = (payload: any): void => {
-  AsyncStorage.setItem('userAuth', JSON.stringify(payload),(err: any) => {
+  AsyncStorage.setItem('userAuth', JSON.stringify(payload), (err: any) => {
     if (err) {
       throw err;
     }

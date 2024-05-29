@@ -9,11 +9,6 @@ import {RouteNames} from '../config';
 export const MainStack = () => {
   const MainStack = createStackNavigator();
   const authorize = useSelector((state: RootState) => state?.user?.authorize);
-  const isChangeRoute = useSelector(
-    (state: RootState) => state?.user?.checkingLoader,
-  );
-
-  console.log('authorize ', authorize);
 
   const AuthScreens = AuthStack.map(stack => (
     <MainStack.Screen
@@ -33,13 +28,7 @@ export const MainStack = () => {
   return (
     <>
       <MainStack.Navigator
-        initialRouteName={
-          !authorize && isChangeRoute
-            ? RouteNames.AuthRoutes.OnBoardingScreen
-            : authorize && isChangeRoute
-            ? RouteNames.AuthRoutes.SelectLanguage
-            : RouteNames.HomeRoutes.TabStack
-        }
+        initialRouteName={RouteNames.HomeRoutes.TabStack}
         screenOptions={{
           headerShown: false,
           ...TransitionPresets.DefaultTransition,

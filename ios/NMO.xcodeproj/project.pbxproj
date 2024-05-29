@@ -13,14 +13,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		20C95475AC0945AB95135F05 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 163189456F8448799C784148 /* Manrope-Light.ttf */; };
-		48105BF93CC0931CEC63AA4B /* libPods-NMO-NMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFFD393AD4A8EBBDD3DEFBD /* libPods-NMO-NMOTests.a */; };
 		4D60C1CC5850499991DE15A7 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50A486B0164A4C87A147EC7A /* Manrope-Medium.ttf */; };
-		4DDAAD74E98A0233567C461B /* libPods-NMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE592FCB35F941869A04086B /* libPods-NMO.a */; };
 		5188C729D06842F7A050D7C6 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80B2CEE6B39C4B25A5992647 /* Manrope-Regular.ttf */; };
+		56C69C6DF561C669A4AC80FA /* libPods-NMO-NMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E4C1E6E6F63631754EA84E /* libPods-NMO-NMOTests.a */; };
 		61113CD227954A5898D63559 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA397DE592F848748E1F2676 /* Manrope-Bold.ttf */; };
 		6811E9581DB24A968763E1B5 /* Manrope-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F8F3CED0D2A4CEC965BF467 /* Manrope-ExtraLight.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8432335A51E248B589CECF8C /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8272296D5D9E4E19A3FF683A /* Manrope-SemiBold.ttf */; };
+		A2E73EF61D59BBEBA369A4FF /* libPods-NMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDC76CDBD95394CA45EBF79 /* libPods-NMO.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,27 +37,27 @@
 		00E356EE1AD99517003FC87E /* NMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* NMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMOTests.m; sourceTree = "<group>"; };
-		07F3BE0903B4C4C4890BB62A /* Pods-NMO-NMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO-NMOTests.release.xcconfig"; path = "Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests.release.xcconfig"; sourceTree = "<group>"; };
-		08D522951D1E30435525292A /* Pods-NMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO.debug.xcconfig"; path = "Target Support Files/Pods-NMO/Pods-NMO.debug.xcconfig"; sourceTree = "<group>"; };
+		0175E6B41AF613F79A8D01CF /* Pods-NMO-NMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO-NMOTests.debug.xcconfig"; path = "Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* NMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = NMO/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = NMO/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NMO/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NMO/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NMO/main.m; sourceTree = "<group>"; };
-		163189456F8448799C784148 /* Manrope-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Light.ttf"; path = "../src/assets/fonts/Manrope-Light.ttf"; sourceTree = "<group>"; };
-		3BFFD393AD4A8EBBDD3DEFBD /* libPods-NMO-NMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMO-NMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		50A486B0164A4C87A147EC7A /* Manrope-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Medium.ttf"; path = "../src/assets/fonts/Manrope-Medium.ttf"; sourceTree = "<group>"; };
-		5F8F3CED0D2A4CEC965BF467 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraLight.ttf"; path = "../src/assets/fonts/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
-		80B2CEE6B39C4B25A5992647 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.ttf"; path = "../src/assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		163189456F8448799C784148 /* Manrope-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Light.ttf"; path = "../src/assets/fonts/Manrope-Light.ttf"; sourceTree = "<group>"; };
+		1BDC76CDBD95394CA45EBF79 /* libPods-NMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E4C1E6E6F63631754EA84E /* libPods-NMO-NMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMO-NMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A486B0164A4C87A147EC7A /* Manrope-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Medium.ttf"; path = "../src/assets/fonts/Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		5F8F3CED0D2A4CEC965BF467 /* Manrope-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraLight.ttf"; path = "../src/assets/fonts/Manrope-ExtraLight.ttf"; sourceTree = "<group>"; };
+		80B2CEE6B39C4B25A5992647 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Regular.ttf"; path = "../src/assets/fonts/Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NMO/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8272296D5D9E4E19A3FF683A /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.ttf"; path = "../src/assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
-		A066FD56928D3E673928017F /* Pods-NMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO.release.xcconfig"; path = "Target Support Files/Pods-NMO/Pods-NMO.release.xcconfig"; sourceTree = "<group>"; };
-		B41CB36DBCECA326A79FF921 /* Pods-NMO-NMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO-NMOTests.debug.xcconfig"; path = "Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE592FCB35F941869A04086B /* libPods-NMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D991507597454281AE5B73E4 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraBold.ttf"; path = "../src/assets/fonts/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
+		81F2538CDAD6F20921C4FA6D /* Pods-NMO-NMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO-NMOTests.release.xcconfig"; path = "Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		8272296D5D9E4E19A3FF683A /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-SemiBold.ttf"; path = "../src/assets/fonts/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		86C42E2F501AD651F6057C08 /* Pods-NMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO.release.xcconfig"; path = "Target Support Files/Pods-NMO/Pods-NMO.release.xcconfig"; sourceTree = "<group>"; };
+		C3C4E2E40FC72957EDB149B8 /* Pods-NMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMO.debug.xcconfig"; path = "Target Support Files/Pods-NMO/Pods-NMO.debug.xcconfig"; sourceTree = "<group>"; };
+		D991507597454281AE5B73E4 /* Manrope-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-ExtraBold.ttf"; path = "../src/assets/fonts/Manrope-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FA397DE592F848748E1F2676 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.ttf"; path = "../src/assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		FA397DE592F848748E1F2676 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Manrope-Bold.ttf"; path = "../src/assets/fonts/Manrope-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48105BF93CC0931CEC63AA4B /* libPods-NMO-NMOTests.a in Frameworks */,
+				56C69C6DF561C669A4AC80FA /* libPods-NMO-NMOTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DDAAD74E98A0233567C461B /* libPods-NMO.a in Frameworks */,
+				A2E73EF61D59BBEBA369A4FF /* libPods-NMO.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				BE592FCB35F941869A04086B /* libPods-NMO.a */,
-				3BFFD393AD4A8EBBDD3DEFBD /* libPods-NMO-NMOTests.a */,
+				1BDC76CDBD95394CA45EBF79 /* libPods-NMO.a */,
+				44E4C1E6E6F63631754EA84E /* libPods-NMO-NMOTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,10 +169,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08D522951D1E30435525292A /* Pods-NMO.debug.xcconfig */,
-				A066FD56928D3E673928017F /* Pods-NMO.release.xcconfig */,
-				B41CB36DBCECA326A79FF921 /* Pods-NMO-NMOTests.debug.xcconfig */,
-				07F3BE0903B4C4C4890BB62A /* Pods-NMO-NMOTests.release.xcconfig */,
+				C3C4E2E40FC72957EDB149B8 /* Pods-NMO.debug.xcconfig */,
+				86C42E2F501AD651F6057C08 /* Pods-NMO.release.xcconfig */,
+				0175E6B41AF613F79A8D01CF /* Pods-NMO-NMOTests.debug.xcconfig */,
+				81F2538CDAD6F20921C4FA6D /* Pods-NMO-NMOTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -184,12 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NMOTests" */;
 			buildPhases = (
-				5DBEFF69C1C5F27D242A6C6A /* [CP] Check Pods Manifest.lock */,
+				A9D32A9E6D701CEAF10612D4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				BD08104A8E2FF594E4FB57BB /* [CP] Embed Pods Frameworks */,
-				3AD6C9DB0FA7EE028DA8D628 /* [CP] Copy Pods Resources */,
+				0C7CDDE0DAABB5EDF62ED862 /* [CP] Embed Pods Frameworks */,
+				750746A181E409C0A923D0D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,14 +205,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NMO" */;
 			buildPhases = (
-				75DBFB07193B459505192ABF /* [CP] Check Pods Manifest.lock */,
+				33887CE023A445652D5061DA /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				40A8ACE24AD650F760A88A0D /* [CP] Embed Pods Frameworks */,
-				44BCB13B85E3F5C26ECF404A /* [CP] Copy Pods Resources */,
+				95890F80C6BBFE8CBFA63C74 /* [CP] Embed Pods Frameworks */,
+				99EC02F14F4D98C91E92BAF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,80 +302,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		3AD6C9DB0FA7EE028DA8D628 /* [CP] Copy Pods Resources */ = {
+		0C7CDDE0DAABB5EDF62ED862 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		40A8ACE24AD650F760A88A0D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44BCB13B85E3F5C26ECF404A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5DBEFF69C1C5F27D242A6C6A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NMO-NMOTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75DBFB07193B459505192ABF /* [CP] Check Pods Manifest.lock */ = {
+		33887CE023A445652D5061DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,21 +341,77 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BD08104A8E2FF594E4FB57BB /* [CP] Embed Pods Frameworks */ = {
+		750746A181E409C0A923D0D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO-NMOTests/Pods-NMO-NMOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95890F80C6BBFE8CBFA63C74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99EC02F14F4D98C91E92BAF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NMO/Pods-NMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D32A9E6D701CEAF10612D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NMO-NMOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -466,7 +466,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B41CB36DBCECA326A79FF921 /* Pods-NMO-NMOTests.debug.xcconfig */;
+			baseConfigurationReference = 0175E6B41AF613F79A8D01CF /* Pods-NMO-NMOTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -493,7 +493,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07F3BE0903B4C4C4890BB62A /* Pods-NMO-NMOTests.release.xcconfig */;
+			baseConfigurationReference = 81F2538CDAD6F20921C4FA6D /* Pods-NMO-NMOTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -517,12 +517,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08D522951D1E30435525292A /* Pods-NMO.debug.xcconfig */;
+			baseConfigurationReference = C3C4E2E40FC72957EDB149B8 /* Pods-NMO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X7TT399C39;
+				DEVELOPMENT_TEAM = 957GK6W9G6;
 				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = NMO/Info.plist;
@@ -597,12 +597,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A066FD56928D3E673928017F /* Pods-NMO.release.xcconfig */;
+			baseConfigurationReference = 86C42E2F501AD651F6057C08 /* Pods-NMO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X7TT399C39;
+				DEVELOPMENT_TEAM = 957GK6W9G6;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = NMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

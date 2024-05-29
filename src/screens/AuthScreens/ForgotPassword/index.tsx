@@ -23,11 +23,11 @@ export const ForgotPassword: React.FC<ForgotPasswordProps> = ({}) => {
         email: '',
       }}
       onSubmit={value => {
-        dispatch(
-          AuthActions.setForgotPassword({
-            email: value?.email?.toLocaleLowerCase(),
-          }),
-        );
+        // dispatch(
+        //   AuthActions.setForgotPassword({
+        //     email: value?.email?.toLocaleLowerCase(),
+        //   }),
+        // );
         // NavigationService.navigate(RouteNames.AuthRoutes.ChangePasswrod, {
         //   email: value?.email,
         // });
@@ -53,7 +53,7 @@ export const ForgotPassword: React.FC<ForgotPasswordProps> = ({}) => {
           // disabled={!isValid}
           onPress={handleSubmit}>
           <CustomInput
-          heading='Enter your email'
+            heading="Enter your email"
             placeholder="Enter Email"
             value={values?.email}
             onChangeText={handleChange('email')}

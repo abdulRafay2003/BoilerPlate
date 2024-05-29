@@ -1,7 +1,7 @@
 import httpService from '../https.service';
 
 const userLogin = (body: object) => {
-  return httpService().post('auth/login', body);
+  return httpService().post('login', body);
 };
 
 const userSignup = (body: object) => {

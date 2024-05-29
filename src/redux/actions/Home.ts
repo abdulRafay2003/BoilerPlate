@@ -2,134 +2,18 @@ export default class Action {
   //Constants
   static EMPTY_STATE_SUCCESS = 'EMPTY_STATE_SUCCESS';
   static IS_DARK_MODE = 'IS_DARK_MODE';
-
-  static CHANGE_PASSWORD_REQUEST = 'CHANGE_PASSWORD_REQUEST';
-  static CHANGE_PASSWORD_SUCCESS = 'CHANGE_PASSWORD_SUCCESS';
-  static CHANGE_PASSWORD_FAILURE = 'CHANGE_PASSWORD_FAILURE';
-
-  static UPLOAD_MEDIA_REQUEST = 'UPLOAD_MEDIA_REQUEST';
-  static UPLOAD_MEDIA_SUCCESS = 'UPLOAD_MEDIA_SUCCESS';
-  static UPLOAD_MEDIA_FAILURE = 'UPLOAD_MEDIA_FAILURE';
-
-  static GET_NEW_CONVERSATION_LIST_REQUEST =
-    'GET_NEW_CONVERSATION_LIST_REQUEST';
-  static GET_NEW_CONVERSATION_LIST_SUCCESS =
-    'GET_NEW_CONVERSATION_LIST_SUCCESS';
-  static GET_NEW_CONVERSATION_LIST_FAILURE =
-    'GET_NEW_CONVERSATION_LIST_FAILURE';
-
-  static GET_NEW_CONVERSATION_BY_ID_REQUEST =
-    'GET_NEW_CONVERSATION_BY_ID_REQUEST';
-  static GET_NEW_CONVERSATION_BY_ID_SUCCESS =
-    'GET_NEW_CONVERSATION_BY_ID_SUCCESS';
-  static GET_NEW_CONVERSATION_BY_ID_FAILURE =
-    'GET_NEW_CONVERSATION_BY_ID_FAILURE';
-
-  static SET_COURSE_HISTORY_REQUEST = 'SET_COURSE_HISTORY_REQUEST';
-  static SET_COURSE_HISTORY_SUCCESS = 'SET_COURSE_HISTORY_SUCCESS';
-  static SET_COURSE_HISTORY_FAILURE = 'SET_COURSE_HISTORY_FAILURE';
-
-  static GET_COURSE_HISTORY_REQUEST = 'GET_COURSE_HISTORY_REQUEST';
-  static GET_COURSE_HISTORY_SUCCESS = 'GET_COURSE_HISTORY_SUCCESS';
-  static GET_COURSE_HISTORY_FAILURE = 'GET_COURSE_HISTORY_FAILURE';
-
-  static SET_COMPLETE_CLASS_REQUEST = 'SET_COMPLETE_CLASS_REQUEST';
-  static SET_COMPLETE_CLASS_SUCCESS = 'SET_COMPLETE_CLASS_SUCCESS';
-  static SET_COMPLETE_CLASS_FAILURE = 'SET_COMPLETE_CLASS_FAILURE';
-
-  static GET_COMPLETE_CLASS_REQUEST = 'GET_COMPLETE_CLASS_REQUEST';
-  static GET_COMPLETE_CLASS_SUCCESS = 'GET_COMPLETE_CLASS_SUCCESS';
-  static GET_COMPLETE_CLASS_FAILURE = 'GET_COMPLETE_CLASS_FAILURE';
-
-  static SET_FAVOURITE_COURSE_REQUEST = 'SET_FAVOURITE_COURSE_REQUEST';
-  static SET_FAVOURITE_COURSE_SUCCESS = 'SET_FAVOURITE_COURSE_SUCCESS';
-  static SET_FAVOURITE_COURSE_FAILURE = 'SET_FAVOURITE_COURSE_FAILURE';
-
-  static GET_FAVOURITE_COURSE_REQUEST = 'GET_FAVOURITE_COURSE_REQUEST';
-  static GET_FAVOURITE_COURSE_SUCCESS = 'GET_FAVOURITE_COURSE_SUCCESS';
-  static GET_FAVOURITE_COURSE_FAILURE = 'GET_FAVOURITE_COURSE_FAILURE';
-
-  static GET_COURSE_CATEGORIES_REQUEST = 'GET_COURSE_CATEGORIES_REQUEST';
-  static GET_COURSE_CATEGORIES_SUCCESS = 'GET_COURSE_CATEGORIES_SUCCESS';
-  static GET_COURSE_CATEGORIES_FAILURE = 'GET_COURSE_CATEGORIES_FAILURE';
+  static USER_DETAILS = 'USER_DETAILS';
 
   //Actions
-
   static setDarkMode() {
     return {
       type: Action.IS_DARK_MODE,
     };
   }
-
-  static setChangePassword(payload: any) {
+  static setUserDetails(payload: any) {
     return {
-      type: Action.CHANGE_PASSWORD_REQUEST,
+      type: Action.USER_DETAILS,
       payload,
-    };
-  }
-
-  static setUploadMedia(payload: any) {
-    return {
-      type: Action.UPLOAD_MEDIA_REQUEST,
-      payload,
-    };
-  }
-
-  static getNewConversation() {
-    return {
-      type: Action.GET_NEW_CONVERSATION_LIST_REQUEST,
-    };
-  }
-
-  static getNewConversationById(payload: any) {
-    return {
-      type: Action.GET_NEW_CONVERSATION_BY_ID_REQUEST,
-      payload,
-    };
-  }
-
-  static setCourseHistory(payload: any) {
-    return {
-      type: Action.SET_COURSE_HISTORY_REQUEST,
-      payload,
-    };
-  }
-
-  static getCourseHistory() {
-    return {
-      type: Action.GET_COURSE_HISTORY_REQUEST,
-    };
-  }
-
-  static setCompleteClass(payload: any) {
-    return {
-      type: Action.SET_COMPLETE_CLASS_REQUEST,
-      payload,
-    };
-  }
-
-  static getCompleteClass() {
-    return {
-      type: Action.GET_COMPLETE_CLASS_REQUEST,
-    };
-  }
-
-  static setFavouriteCourse(payload: any) {
-    return {
-      type: Action.SET_FAVOURITE_COURSE_REQUEST,
-      payload,
-    };
-  }
-
-  static getFavouriteCourse() {
-    return {
-      type: Action.GET_FAVOURITE_COURSE_REQUEST,
-    };
-  }
-
-  static getCourseCategories() {
-    return {
-      type: Action.GET_COURSE_CATEGORIES_REQUEST,
     };
   }
 }

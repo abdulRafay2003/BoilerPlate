@@ -1,4 +1,4 @@
-import { RouteNames } from '../config';
+import {RouteNames} from '../config';
 import {
   ChangePassword,
   ForgotPassword,
@@ -20,36 +20,35 @@ import {
   SelectLanguageProps,
   SignupScreenProps,
   VerifyUserProps,
-  
 } from '../screens/propTypes';
 
 type AuthScreenStacksTypes = {
   name: string;
   component:
-  | React.FC<SignupScreenProps>
-  | React.FC<LoginScreenProps>
-  | React.FC<OnBoardingProps>
-  | React.FC<ForgotPasswordProps>
-  | React.FC<OtpScreenProps>
-  | React.FC<SelectLanguageProps>
-  | React.FC<ChangePasswordProps>
-  | React.FC<GoogleSignUpProps>
-  | React.FC<VerifyUserProps>
+    | React.FC<SignupScreenProps>
+    | React.FC<LoginScreenProps>
+    | React.FC<OnBoardingProps>
+    | React.FC<ForgotPasswordProps>
+    | React.FC<OtpScreenProps>
+    | React.FC<SelectLanguageProps>
+    | React.FC<ChangePasswordProps>
+    | React.FC<GoogleSignUpProps>
+    | React.FC<VerifyUserProps>;
 
   key: string;
 }[];
 
 export const AuthStack: AuthScreenStacksTypes = [
-  {
-    name: RouteNames.AuthRoutes.SelectLanguage,
-    component: SelectLanguage,
-    key: RouteNames.AuthRoutes.SelectLanguage,
-  },
-  {
-    name: RouteNames.AuthRoutes.OnBoardingScreen,
-    component: OnBoarding,
-    key: RouteNames.AuthRoutes.OnBoardingScreen,
-  },
+  // {
+  //   name: RouteNames.AuthRoutes.SelectLanguage,
+  //   component: SelectLanguage,
+  //   key: RouteNames.AuthRoutes.SelectLanguage,
+  // },
+  // {
+  //   name: RouteNames.AuthRoutes.OnBoardingScreen,
+  //   component: OnBoarding,
+  //   key: RouteNames.AuthRoutes.OnBoardingScreen,
+  // },
   {
     name: RouteNames.AuthRoutes.SignUpScreen,
     component: SignupScreen,

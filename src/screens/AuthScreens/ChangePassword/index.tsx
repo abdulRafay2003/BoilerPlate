@@ -39,11 +39,7 @@ import {AuthActions, HomeActions} from '../../../redux/actions';
 export const ChangePassword: React.FC<ChangePasswordProps> = ({route}) => {
   const {from, data} = route?.params;
   const dispatch = useDispatch();
-  // to check onBoaring response
-  const onResponseCompleted = useSelector(
-    (state: RootState) => state.user.onResponseCompleted,
-  );
-  console.log('paramms-------', from, data, onResponseCompleted);
+  // console.log('paramms-------', from, data, onResponseCompleted);
 
   const [hideOldPassword, setHideOldPassword] = useState(true);
   const [hidePassword, setHidePassword] = useState(true);
@@ -53,12 +49,12 @@ export const ChangePassword: React.FC<ChangePasswordProps> = ({route}) => {
   let passwordRef = useRef<TextInput>(null!);
   let confirmPasswordRef = useRef<TextInput>(null!);
 
-  useEffect(() => {
-    if (onResponseCompleted == 'Done') {
-      setPasswordChanged(true);
-      dispatch(AuthActions.setOnRespose('InProcess'));
-    }
-  }, [onResponseCompleted]);
+  // useEffect(() => {
+  //   if (onResponseCompleted == 'Done') {
+  //     setPasswordChanged(true);
+  //     // dispatch(AuthActions.setOnRespose('InProcess'));
+  //   }
+  // }, [onResponseCompleted]);
 
   return (
     <Formik
@@ -75,14 +71,14 @@ export const ChangePassword: React.FC<ChangePasswordProps> = ({route}) => {
           };
 
           console.log('change pswd', body);
-          dispatch(HomeActions.setChangePassword(body));
+          // dispatch(HomeActions.setChangePassword(body));
         } else {
           const body = {
             ...value,
             ...data,
           };
           console.log('resed pswd', body);
-          dispatch(AuthActions.setResetPassword(body));
+          // dispatch(AuthActions.setResetPassword(body));
         }
       }}
       validationSchema={

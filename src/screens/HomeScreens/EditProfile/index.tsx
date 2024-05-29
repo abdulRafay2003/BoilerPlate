@@ -18,7 +18,7 @@ import {AuthActions, HomeActions} from '../../../redux/actions';
 export const EditProfile: React.FC<EditProfileProps> = ({}) => {
   const dispatch = useDispatch();
 
-  const userData = useSelector((state: RootState) => state.user.userDetail);
+  const userData = useSelector((state: RootState) => state.home.userDetails);
 
   const [updatedData, setUpdatedData] = useState('');
   const [name, setName] = useState(userData?.fullName || '');
@@ -67,9 +67,9 @@ export const EditProfile: React.FC<EditProfileProps> = ({}) => {
         fullName: name,
       };
 
-      dispatch(HomeActions.setUploadMedia(body));
+      // dispatch(HomeActions.setUploadMedia(body));
     } else if (name !== userData?.fullName) {
-      dispatch(AuthActions.setUpdateProfile({fullName: name}));
+      // dispatch(AuthActions.setUpdateProfile({fullName: name}));
     } else {
       Utills.showToast('Please update your profile.');
     }

@@ -54,7 +54,7 @@ export const TabStack: React.FC = ({}) => {
         Utills.selectedThemeColors().TextInputBaseColor,
         true,
       );
-      console.log(response); // {success: true}
+      // console.log('changebottom', response); // {success: true}
     } catch (e) {
       console.log(e); // {success: false}
     }
@@ -64,46 +64,46 @@ export const TabStack: React.FC = ({}) => {
     changeBottomBtnBarColor();
   }, []);
   return (
-      <PaperProvider
-        theme={MD3LightTheme}
-        // theme={{
-        //   dark: true,
-        //   colors: {
-        //     background: Utills.selectedThemeColors().Base,
-        //     primary: '#000000',
-        //     text: '#000000',
-        //     notification: '#000000',
-        //   },
-        // }}
-      >
-        <Tab.Navigator
-          activeColor={Utills.selectedThemeColors().Primary}
-          inactiveColor={Utills.selectedThemeColors().InActiveTabBar}
-          barStyle={styles.barStyle}
-          shifting>
-          {tabsData?.map(item => (
-            <Tab.Screen
-              key={item?.name}
-              name={item?.name}
-              component={item?.component}
-              options={{
-                tabBarLabel: item?.name,
-                tabBarIcon: ({color, focused}) => (
-                  <Image
-                    source={focused ? item?.active : item?.inActive}
-                    resizeMode="contain"
-                    style={{
-                      // tintColor: color,
-                      width: Metrix.HorizontalSize(20),
-                      height: Metrix.VerticalSize(20),
-                    }}
-                  />
-                ),
-              }}
-            />
-          ))}
-        </Tab.Navigator>
-      </PaperProvider>
+    <PaperProvider
+      theme={MD3LightTheme}
+      // theme={{
+      //   dark: true,
+      //   colors: {
+      //     background: Utills.selectedThemeColors().Base,
+      //     primary: '#000000',
+      //     text: '#000000',
+      //     notification: '#000000',
+      //   },
+      // }}
+    >
+      <Tab.Navigator
+        activeColor={Utills.selectedThemeColors().Primary}
+        inactiveColor={Utills.selectedThemeColors().InActiveTabBar}
+        barStyle={styles.barStyle}
+        shifting>
+        {tabsData?.map(item => (
+          <Tab.Screen
+            key={item?.name}
+            name={item?.name}
+            component={item?.component}
+            options={{
+              tabBarLabel: item?.name,
+              tabBarIcon: ({color, focused}) => (
+                <Image
+                  source={focused ? item?.active : item?.inActive}
+                  resizeMode="contain"
+                  style={{
+                    // tintColor: color,
+                    width: Metrix.HorizontalSize(20),
+                    height: Metrix.VerticalSize(20),
+                  }}
+                />
+              ),
+            }}
+          />
+        ))}
+      </Tab.Navigator>
+    </PaperProvider>
   );
 };
 
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderColor: Utills.selectedThemeColors().PrimaryOpacity,
     // borderWidth: 1,
-    // borderColor: '#fff',
+    // borderColor: '#FFFFFF',
     height: Metrix.VerticalSize(90),
     // justifyContent: 'flex-end',
     paddingTop: Metrix.VerticalSize(10),
