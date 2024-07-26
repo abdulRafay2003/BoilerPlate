@@ -44,11 +44,11 @@ export const AuthStack: AuthScreenStacksTypes = [
   //   component: SelectLanguage,
   //   key: RouteNames.AuthRoutes.SelectLanguage,
   // },
-  // {
-  //   name: RouteNames.AuthRoutes.OnBoardingScreen,
-  //   component: OnBoarding,
-  //   key: RouteNames.AuthRoutes.OnBoardingScreen,
-  // },
+  {
+    name: RouteNames.AuthRoutes.OnBoardingScreen,
+    component: OnBoarding,
+    key: RouteNames.AuthRoutes.OnBoardingScreen,
+  },
   {
     name: RouteNames.AuthRoutes.SignUpScreen,
     component: SignupScreen,
