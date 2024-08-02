@@ -84,13 +84,31 @@ const Images = {
   Stroke: require('../../assets/icons/Stroke.png'),
   NMO: require('../../assets/icons/NMO.png'),
   Arrow: require('../../assets/icons/Arrow.png'),
-  LogOut: require('../../assets/icons/LogOut.png'),
+
   ArrowChevron: require('../../assets/icons/ArrowChevron.png'),
   Placeholder: require('../../assets/icons/Placeholder.png'),
   Transactions: require('../../assets/icons/Transactions.png'),
 
   // Trash: require("../../assets/icons/Search.png"),
   // Splash: require("../../assets/images/TestingAvatar2.png"),
+
+  // Adding New Images
+  Signup: require('../../assets/icons/signup.png'),
+  CircularArrow: require('../../assets/icons/circularArrow.png'),
+
+  Profile: require('../../assets/icons/profile.png'),
+  MyWallet: require('../../assets/icons/contactUs.png'),
+  MyWishlist: require('../../assets/icons/myWishlist.png'),
+  MyProgress: require('../../assets/icons/myProgress.png'),
+  Referral: require('../../assets/icons/referral.png'),
+  Blogs: require('../../assets/icons/blogs.png'),
+  Videos: require('../../assets/icons/videos.png'),
+  ContactUs: require('../../assets/icons/contactUs.png'),
+  AboutUs: require('../../assets/icons/aboutUs.png'),
+  PrivacyPolicy: require('../../assets/icons/privacyPolicy.png'),
+  AccountManagement: require('../../assets/icons/accountManagement.png'),
+  TermsConditions: require('../../assets/icons/termsConditions.png'),
+  LogOut: require('../../assets/icons/LogOut.png'),
 };
 
 export default Images;

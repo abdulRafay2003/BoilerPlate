@@ -28,7 +28,7 @@ import OTPInputView from '@twotalltotems/react-native-otp-input';
 import {OtpScreenProps} from '../../propTypes';
 import {useDispatch} from 'react-redux';
 import {AuthActions} from '../../../redux/actions';
-import { t } from 'i18next';
+import {t} from 'i18next';
 
 export const OtpScreen: React.FC<OtpScreenProps> = ({route}) => {
   // const {email, from} = route?.params;
@@ -58,14 +58,14 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({route}) => {
     setModalPostVisible(false);
     setTimeout(() => {
       dispatch(AuthActions.loginSuccess(true));
-    },200);
+    }, 200);
   };
 
   return (
     <>
       <AuthHeader
-        heading={t("enter_otp_code")}
-        title={t("confirm")}
+        heading={t('enter_otp_code')}
+        title={t('confirm')}
         customStyles={{marginTop: Metrix.VerticalSize(20)}}
         isBtn
         onPress={() => setModalPostVisible(true)}
@@ -82,13 +82,12 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({route}) => {
         // }}
       >
         <View style={styles.container}>
-          <CustomText.SmallText>
+          <CustomText.RegularText customStyle={{textAlign: 'center'}}>
             6 digit code sent to your mobile. Please check and confirm the code
             to continue
-          </CustomText.SmallText>
+          </CustomText.RegularText>
           <OTPInputView
             style={{
-              // width: '80%',
               height: Metrix.VerticalSize(50),
               marginVertical: Metrix.VerticalSize(40),
             }}
@@ -104,26 +103,28 @@ export const OtpScreen: React.FC<OtpScreenProps> = ({route}) => {
             style={{
               flexDirection: 'row',
             }}>
-            <CustomText.SmallText>{t("didnt_get_otp")}</CustomText.SmallText>
+            <CustomText.RegularText>
+              {t('Didnt get OTP ? ')}
+            </CustomText.RegularText>
 
             <TouchableOpacity>
-              <CustomText.SmallText
+              <CustomText.RegularText
                 customStyle={{
                   color: Utills.selectedThemeColors().Primary,
+                  fontWeight: '700',
                 }}>
-                {t("_resend")}
-              </CustomText.SmallText>
+                {t('Resend Now')}
+              </CustomText.RegularText>
             </TouchableOpacity>
           </View>
         </View>
       </AuthHeader>
       <CustomModal onClose={handleOnClosePost} visible={modalPostVisible}>
         <PlaceholderComponent
-          heading={t("congratulations")}
+          heading={t('congratulations')}
           image={Images.Wow}
-          subHeading={t(`conversation_champion`)}
-          
-          title={t("go_to_courses")}
+          subHeading={t(`Account Created Successfully`)}
+          title={t('Go to Home')}
           onPress={() => {
             handleOnClosePost();
           }}
@@ -150,15 +151,20 @@ const styles = StyleSheet.create({
   textStyle: {
     textAlign: 'center',
     lineHeight: Metrix.VerticalSize(20),
+    // color: Utills.selectedThemeColors().Primary,
   },
   underlineStyleBase: {
-    width: Metrix.HorizontalSize(40),
-    height: Metrix.VerticalSize(45),
-    borderWidth: 0,
+    width: Metrix.HorizontalSize(50),
+    height: Metrix.VerticalSize(50),
+    borderWidth: 1,
+    // marginHorizontal: 3,
     borderBottomWidth: Metrix.HorizontalSize(2),
-    borderColor: '#DFDFDF',
+    // borderTopWidth: Metrix.HorizontalSize(2),
+    borderRightWidth: Metrix.HorizontalSize(2),
+    borderColor: Utills.selectedThemeColors().PrimaryTextColor,
+    borderRadius: Metrix.HorizontalSize(10),
     fontSize: FontType.FontExtraLarge,
-    color: Utills.selectedThemeColors().Primary,
+    color: Utills.selectedThemeColors().PrimaryTextColor,
     padding: 0,
   },
   underlineStyleHighLighted: {

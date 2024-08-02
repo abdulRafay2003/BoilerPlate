@@ -9,6 +9,7 @@ import {
   SignupScreen,
   GoogleSignUp,
   VerifyUser,
+  RegisterScreen,
 } from '../screens';
 import {
   ChangePasswordProps,
@@ -44,11 +45,11 @@ export const AuthStack: AuthScreenStacksTypes = [
   //   component: SelectLanguage,
   //   key: RouteNames.AuthRoutes.SelectLanguage,
   // },
-  {
-    name: RouteNames.AuthRoutes.OnBoardingScreen,
-    component: OnBoarding,
-    key: RouteNames.AuthRoutes.OnBoardingScreen,
-  },
+  // {
+  //   name: RouteNames.AuthRoutes.OnBoardingScreen,
+  //   component: OnBoarding,
+  //   key: RouteNames.AuthRoutes.OnBoardingScreen,
+  // },
   {
     name: RouteNames.AuthRoutes.SignUpScreen,
     component: SignupScreen,
@@ -64,6 +65,11 @@ export const AuthStack: AuthScreenStacksTypes = [
     name: RouteNames.AuthRoutes.LoginScreen,
     component: LoginScreen,
     key: RouteNames.AuthRoutes.LoginScreen,
+  },
+  {
+    name: RouteNames.AuthRoutes.RegisterScreen,
+    component: RegisterScreen,
+    key: RouteNames.AuthRoutes.RegisterScreen,
   },
 
   {

@@ -16,6 +16,7 @@ import {
   Metrix,
   NavigationService,
   RouteNames,
+  Utills,
 } from '../../../config';
 import Schema from '../../../formik';
 import {SignupScreenProps} from '../../propTypes';
@@ -32,29 +33,34 @@ export const SignupScreen: React.FC<SignupScreenProps> = ({}) => {
 
   const languageOptions = [
     {
-      name: t('continue_with_google'),
-      icon: Images.GoogleLogo,
-      onPress: () =>
-        dispatch(HomeActions.setUserDetails({name: 'John Doe', id: '1'})),
-      // NavigationService.navigate(RouteNames.AuthRoutes.GoogleSignUp),
-    },
-    {
-      name: t('continue_with_mail'),
+      id: '1',
+      name: t('Login Now'),
       icon: Images.mail,
       onPress: () =>
         NavigationService.navigate(RouteNames.AuthRoutes.LoginScreen),
+      // dispatch(HomeActions.setUserDetails({name: 'John Doe', id: '1'})),
     },
     {
-      name: t('continue_with_mobile'),
-      icon: Images.smartphone,
+      id: '2',
+      name: t('Sign Up Now'),
+      icon: Images.Signup,
       onPress: () =>
-        NavigationService.navigate(RouteNames.AuthRoutes.VerifyUser),
+        NavigationService.navigate(RouteNames.AuthRoutes.RegisterScreen),
+    },
+    {
+      id: '3',
+      name: t('Continue with Google'),
+      icon: Images.GoogleLogo,
+      onPress: () =>
+        dispatch(HomeActions.setUserDetails({name: 'John Doe', id: '1'})),
     },
   ];
   return (
     <AuthHeader
       heading={t('heading')}
       title={t('continue')}
+      topHeader={{flex: 1.7}}
+      showBackHeader={false}
       customStyles={{marginTop: Metrix.VerticalSize(20)}}>
       {languageOptions.map((option, index) => (
         <SecondaryButton

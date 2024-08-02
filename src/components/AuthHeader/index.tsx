@@ -2,6 +2,7 @@ import React, {ReactNode} from 'react';
 import {
   Image,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -10,11 +11,11 @@ import {
 import {BackHeader} from '../BackHeader';
 import {CustomText, MainContainer, PrimaryButton, SecondaryButton} from '..';
 import {Colors, Images, Metrix, Utills} from '../../config';
-import { I18nManager } from 'react-native';
+import {I18nManager} from 'react-native';
 import {PrimaryButtonProps} from '../PrimaryButton';
 import {useThemeHook} from '../../hooks';
-import { t } from 'i18next';
-
+import {t} from 'i18next';
+import {StyleProp} from 'react-native';
 
 const TouchableText: React.FC<{text: string}> = ({text}) => {
   // const {Colors} = useThemeHook();
@@ -46,6 +47,7 @@ type AuthHeaderProps = PrimaryButtonProps & {
   isSecondaryBtn?: boolean;
   isupperText?: boolean;
   children: ReactNode;
+  topHeader?: any;
 };
 
 export const AuthHeader: React.FC<AuthHeaderProps> = ({
@@ -62,20 +64,23 @@ export const AuthHeader: React.FC<AuthHeaderProps> = ({
   customStyles,
   isSecondaryBtn,
   isupperText,
+  topHeader,
 }) => {
   // const {Colors} = useThemeHook();
 
   return (
     <MainContainer
       customeStyle={{
-        paddingHorizontal: Metrix.HorizontalSize(33),
+        paddingHorizontal: Metrix.HorizontalSize(25),
       }}>
-      <View style={styles.topContainer}>
+      {/* <ScrollView> */}
+      {showBackHeader && <BackHeader />}
+      <View style={[styles.topContainer, topHeader]}>
         <Image
           source={Images.Logo}
           style={{
-            width: Metrix.HorizontalSize(100),
-            height: Metrix.VerticalSize(45),
+            width: Metrix.HorizontalSize(120),
+            height: Metrix.VerticalSize(50),
           }}
           resizeMode="contain"
         />
@@ -86,7 +91,7 @@ export const AuthHeader: React.FC<AuthHeaderProps> = ({
         <View
           style={
             {
-              // borderWidth:1,
+              // borderWidth: 1,
             }
           }>
           {children}
@@ -103,9 +108,8 @@ export const AuthHeader: React.FC<AuthHeaderProps> = ({
                   textAlign: 'center',
                 }}
                 isSecondaryColor>
-                {t("text")}{' '}
-                <TouchableText text={t("terms")} /> {t("and")}{' '}
-                <TouchableText text={t("conditions")} />
+                {t('text')} <TouchableText text={t('terms')} /> {t('and')}{' '}
+                <TouchableText text={t('conditions')} />
               </CustomText.MediumText>
             </View>
           )}
@@ -121,16 +125,16 @@ export const AuthHeader: React.FC<AuthHeaderProps> = ({
             <View style={{marginBottom: Metrix.VerticalSize(50)}}>
               <CustomText.RegularText
                 customStyle={{
-                  color: Utills.selectedThemeColors().LightGreyText,
+                  color: Utills.selectedThemeColors().SecondaryTextColor,
                   textAlign: 'center',
                   lineHeight: 30,
                 }}>
-                {t('header_text')}
+                {t('or')}
               </CustomText.RegularText>
 
               <SecondaryButton
                 onPress={onPress}
-                title={t("continue_with_google")}
+                title={t('continue_with_google')}
                 source={Images.GoogleLogo}
                 isIcon
               />
@@ -141,12 +145,13 @@ export const AuthHeader: React.FC<AuthHeaderProps> = ({
               style={styles.bottomText}
               onPress={onBottomTextPress}>
               <CustomText.MediumText isSecondaryColor>
-              {t("skip_now")}
+                {t('skip_now')}
               </CustomText.MediumText>
             </TouchableOpacity>
           )}
         </View>
       </View>
+      {/* </ScrollView> */}
     </MainContainer>
   );
 };
@@ -169,7 +174,7 @@ const styles = StyleSheet.create({
   },
   topContainer: {
     // borderWidth: 1,
-    flex: 1.7,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'space-between',
   },

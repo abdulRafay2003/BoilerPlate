@@ -2,7 +2,7 @@ import DataHandler from '../../services/dataHandler.service';
 
 const DefaultColors = {
   Base: '#FFFFFF',
-  PrimaryTextColor: '#212121',
+  PrimaryTextColor: '#000000',
   TextInputBaseColor: '#FFFFFF',
   WhiteOpacity: (opacity = '0.5') => `rgba(255, 255, 255, ${opacity})`,
   BlackOpacity: (opacity = '0.5') => `rgba(0, 0, 0, ${opacity})`,
@@ -10,14 +10,14 @@ const DefaultColors = {
   BaseOpacity: (opacity = '0.5') => `rgba(15, 1, 30, ${opacity})`,
   PrimaryColorOpacity: (opacity = '0.5') => `rgba(51, 153, 102,${opacity})`,
   WhiteTwentyOpacity: 'rgba(255, 255, 255, 0.2)',
-  Primary: '#329966',
+  Primary: '#015DCF',
   Secondary: '#1B2043',
   // Text Colors
   SecondaryTextColor: '#757575',
   TertiaryTextColor: '#FCB706',
   LightGreyText: 'rgba(154, 154, 154, 0.8)',
   SuccessTextColor: '#00b050',
-  ErrorTextColor: '#FF8179',
+  ErrorTextColor: 'red',
   PrimaryOpacity: '#624CFD14',
   NotFocussed: '#888888',
   Danger: '#BE1E24',

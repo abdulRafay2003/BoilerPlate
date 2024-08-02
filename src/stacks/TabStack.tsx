@@ -93,7 +93,7 @@ export const TabStack: React.FC = ({}) => {
                   source={focused ? item?.active : item?.inActive}
                   resizeMode="contain"
                   style={{
-                    // tintColor: color,
+                    tintColor: color,
                     width: Metrix.HorizontalSize(20),
                     height: Metrix.VerticalSize(20),
                   }}

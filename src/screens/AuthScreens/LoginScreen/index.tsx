@@ -20,7 +20,7 @@ import {LoginScreenProps} from '../../propTypes';
 import {useDispatch, useSelector} from 'react-redux';
 import {AuthActions} from '../../../redux/actions';
 import {RootState} from '../../../redux/reducers';
-import { t } from 'i18next';
+import {t} from 'i18next';
 
 export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
   const dispatch = useDispatch();
@@ -58,8 +58,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
         handleSubmit,
       }) => (
         <AuthHeader
-          heading={t("Lets_sign_in")}
-          title={t("login")}
+          heading={t('Lets Sign In')}
+          title={t('login')}
           customStyles={{marginTop: Metrix.VerticalSize(20)}}
           isBtn
           isSecondaryBtn
@@ -68,8 +68,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
             NavigationService.navigate(RouteNames.AuthRoutes.SignUpScreen)
           }>
           <CustomInput
-            heading={t('continue_with_email')}
-            placeholder={t("enter_mail")}
+            heading={t('Email')}
+            placeholder={t('Enter your email')}
             onChangeText={handleChange('email')}
             onBlur={() => setFieldTouched('email')}
             value={values?.email}
@@ -81,8 +81,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
             onSubmitEditing={() => passwordRef.current.focus()}
           />
           <CustomInput
-            heading={t("password")}
-            placeholder={t("enter_your_password")}
+            heading={t('Password')}
+            placeholder={t('Enter your password')}
             value={values?.password}
             onChangeText={handleChange('password')}
             onBlur={() => setFieldTouched('password')}
@@ -106,13 +106,13 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
                 RouteNames.AuthRoutes.ForgotPasswordScreen,
               )
             }>
-            <CustomText.RegularText
+            <CustomText.MediumText
               customStyle={{
-                fontSize: FontType.FontSmall,
+                fontSize: FontType.FontRegular,
                 textAlign: 'right',
               }}>
-              {t("forgot_password")}
-            </CustomText.RegularText>
+              {t('Forgot Password?')}
+            </CustomText.MediumText>
           </TouchableOpacity>
         </AuthHeader>
       )}

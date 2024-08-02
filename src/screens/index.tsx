@@ -9,6 +9,7 @@ import {SelectLanguage} from './AuthScreens/SelectLanguage';
 import {GoogleSignUp} from '../screens/AuthScreens/GoogleSignUp';
 import {VerifyUser} from '../screens/AuthScreens/VerifyUser';
 import {OtpScreen} from './AuthScreens/OtpScreen';
+import {RegisterScreen} from './AuthScreens/RegisterScreen';
 
 // Home Screens
 import {EditProfile} from './HomeScreens/EditProfile';
@@ -32,6 +33,7 @@ export {
   SelectLanguage,
   GoogleSignUp,
   VerifyUser,
+  RegisterScreen,
 
   // Home Screens
   NavigationScreen,

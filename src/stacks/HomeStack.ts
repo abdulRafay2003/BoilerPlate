@@ -20,16 +20,16 @@ type HomeScreenStacksTypes = {
 }[];
 
 export const HomeStack: HomeScreenStacksTypes = [
-  {
-    name: RouteNames.HomeRoutes.DrawerStack,
-    component: DrawerStack,
-    key: RouteNames.HomeRoutes.DrawerStack,
-  },
   // {
-  //   name: RouteNames.HomeRoutes.TabStack,
-  //   component: TabStack,
-  //   key: RouteNames.HomeRoutes.TabStack,
+  //   name: RouteNames.HomeRoutes.DrawerStack,
+  //   component: DrawerStack,
+  //   key: RouteNames.HomeRoutes.DrawerStack,
   // },
+  {
+    name: RouteNames.HomeRoutes.TabStack,
+    component: TabStack,
+    key: RouteNames.HomeRoutes.TabStack,
+  },
 
   {
     name: RouteNames.HomeRoutes.NavigationScreen,

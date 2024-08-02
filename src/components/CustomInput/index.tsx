@@ -9,6 +9,7 @@ import {
   ImageProps,
   ViewStyle,
   I18nManager,
+  ViewProps,
 } from 'react-native';
 import {CustomText} from '..';
 import {Colors, Fonts, Metrix, Images, FontType, Utills} from '../../config';
@@ -25,6 +26,7 @@ type CustomInputProps = TextInputProps & {
   touched?: boolean;
   inputRef?: Ref<TextInput>;
   heading?: string;
+  mainContainerStyle?: ViewProps['style'];
 };
 
 export const CustomInput: FC<CustomInputProps> = ({
@@ -38,22 +40,23 @@ export const CustomInput: FC<CustomInputProps> = ({
   touched,
   inputRef,
   heading,
+  mainContainerStyle,
   ...rest
 }) => {
   //   const [isFocused, setIsFocused] = useState(false);
   // const {Colors} = useThemeHook();
 
   return (
-    <>
+    <View style={[mainContainerStyle]}>
       {heading && (
-        <CustomText.RegularText
+        <CustomText.MediumText
           customStyle={{
-            textAlign: I18nManager.forceRTL ? "left" : "right",
+            // textAlign: I18nManager.forceRTL ? 'left' : 'right',
             marginLeft: Metrix.HorizontalSize(10),
             fontSize: Metrix.customFontSize(15),
           }}>
           {heading || ''}
-        </CustomText.RegularText>
+        </CustomText.MediumText>
       )}
       <View style={styles.textContainer}>
         <TextInput
@@ -61,9 +64,7 @@ export const CustomInput: FC<CustomInputProps> = ({
           // onBlur={() => setIsFocused(false)}
           selectionColor={Utills.selectedThemeColors().Primary}
           style={[styles.textInput, customStyle]}
-          placeholderTextColor={
-            Utills.selectedThemeColors().TextInputPlaceholserColor
-          }
+          placeholderTextColor={Utills.selectedThemeColors().SecondaryTextColor}
           ref={inputRef}
           {...rest}
         />
@@ -105,7 +106,7 @@ export const CustomInput: FC<CustomInputProps> = ({
           {error}
         </CustomText.SmallText>
       )}
-    </>
+    </View>
   );
 };
 
@@ -129,8 +130,8 @@ const styles = StyleSheet.create({
     paddingLeft: Metrix.HorizontalSize(20),
     fontFamily: Fonts['Regular'],
     height: '100%',
-    // width: '85%',
-    textAlign: I18nManager.forceRTL ? "left" : "right",
+    width: '85%',
+    // textAlign: I18nManager.forceRTL ? 'left' : 'right',
     // borderWidth: 1,
     // backgroundColor: Utills.selectedThemeColors().TextInputBaseColor,
   },

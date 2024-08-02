@@ -3,7 +3,7 @@ import {
   widthPercentageToDP as wp2dp,
   heightPercentageToDP as hp2dp,
 } from 'react-native-responsive-screen';
-import { Colors } from '..';
+import {Colors} from '..';
 
 const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 const devHeight: number = 640; //Phone height during development
@@ -72,8 +72,7 @@ export const HorizontalSize = (size: number): number => {
 };
 
 export const createShadow = {
-  shadowColor:
-    Platform.OS == 'android' ? '#D3D3D3' : 'rgba(146, 146, 146, 1)',
+  shadowColor: Platform.OS == 'android' ? '#D3D3D3' : 'rgba(146, 146, 146, 1)',
   shadowOffset: {
     width: HorizontalSize(3),
     height: VerticalSize(2),
@@ -81,6 +80,17 @@ export const createShadow = {
   shadowOpacity: 0.2,
   shadowRadius: 5,
 
+  elevation: VerticalSize(20),
+};
+
+export const cardShadow = {
+  shadowColor: Platform.OS == 'android' ? '#000000' : '#000000',
+  shadowOffset: {
+    width: HorizontalSize(0),
+    height: VerticalSize(0),
+  },
+  shadowOpacity: 0.5,
+  shadowRadius: 5,
   elevation: VerticalSize(20),
 };
 
@@ -99,4 +109,5 @@ export default {
   VerticalSize,
   HorizontalSize,
   createShadow,
+  cardShadow,
 };

@@ -10,9 +10,16 @@ import {
   ViewStyle,
   ImageStyle,
 } from 'react-native';
-import {Colors, FontType, Images, Metrix, NavigationService} from '../../config';
+import {
+  Colors,
+  FontType,
+  Images,
+  Metrix,
+  NavigationService,
+  Utills,
+} from '../../config';
 import {CustomText} from '..';
-import { normalizeFont } from '../../config/metrix';
+import {normalizeFont} from '../../config/metrix';
 
 type BackHeaderProps = {
   heading?: string;
@@ -38,7 +45,7 @@ export const BackHeader: React.FC<BackHeaderProps> = ({
       {backArrow ? (
         <TouchableOpacity style={styles.backButton} onPress={backFunction}>
           <Image
-            source={Images.Arrow}
+            source={Images.ArrowChevron}
             resizeMode="contain"
             style={[styles.backImage, btnImageStyle]}
           />
@@ -50,7 +57,13 @@ export const BackHeader: React.FC<BackHeaderProps> = ({
         {isBoldHeading ? (
           <CustomText.LargeBoldText>{heading}</CustomText.LargeBoldText>
         ) : (
-          <CustomText.LargeSemiBoldText customStyle={{color:Colors.Base,fontSize:normalizeFont(18)}}>{heading}</CustomText.LargeSemiBoldText>
+          <CustomText.LargeSemiBoldText
+            customStyle={{
+              color: Utills.selectedThemeColors().Primary,
+              fontSize: normalizeFont(18),
+            }}>
+            {heading}
+          </CustomText.LargeSemiBoldText>
         )}
       </View>
     </View>
@@ -62,22 +75,22 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     // alignItems: 'center',
     width: '100%',
-    paddingTop: Metrix.VerticalSize(10),
+    // paddingTop: Metrix.VerticalSize(10),
     paddingBottom: Metrix.VerticalSize(10),
   },
   backButton: {
-    width: '25%',
-    // borderWidth:1,
-    // borderColor:'white'
+    width: '10%',
   },
   backImage: {
-    width: Metrix.HorizontalSize(20),
-    height: Metrix.VerticalSize(20),
+    width: Metrix.HorizontalSize(30),
+    height: Metrix.VerticalSize(30),
+    tintColor: Utills.selectedThemeColors().Primary,
+    transform: [{rotate: '180deg'}],
   },
   headingContainer: {
     // paddingVertical:5,
-    width: '50%',
+    width: '80%',
     alignItems: 'center',
-    justifyContent:"center"
+    justifyContent: 'center',
   },
 });

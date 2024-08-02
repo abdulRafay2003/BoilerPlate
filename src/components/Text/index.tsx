@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
   },
   ExtraSmallText: {
     fontFamily: Fonts['Regular'],
-    fontSize: FontType.FontExtraLarge,
+    fontSize: FontType.FontExtraSmall,
     textAlign: I18nManager.forceRTL ? 'left' : 'right',
   },
 });

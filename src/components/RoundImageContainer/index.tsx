@@ -31,7 +31,7 @@ export const RoundImageContainer: FC<RoundImageContainerProps> = ({
   circleWidth = 100,
   backgroundColor = Utills.selectedThemeColors().Base,
   borderRadius = null,
-  borderColor = Utills.selectedThemeColors().Primary,
+  borderColor = Utills.selectedThemeColors().Base,
   borderWidth = StyleSheet.hairlineWidth,
   styles = {},
   customContainerStyle = {},
@@ -56,7 +56,7 @@ export const RoundImageContainer: FC<RoundImageContainerProps> = ({
           borderRadius: borderRadius
             ? Metrix.HorizontalSize(borderRadius)
             : Metrix.HorizontalSize(circleWidth / 2),
-          borderColor: borderColor, 
+          borderColor: borderColor,
           borderWidth: borderWidth,
           overflow: 'hidden',
           ...styles,

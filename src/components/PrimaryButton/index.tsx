@@ -41,7 +41,9 @@ export const PrimaryButton: FC<PrimaryButtonProps> = ({
       style={[
         styles.buttonContainer,
         {
-          backgroundColor: disabled ? Utills.selectedThemeColors().TextInputPlaceholserColor : color,
+          backgroundColor: disabled
+            ? Utills.selectedThemeColors().TextInputPlaceholserColor
+            : color,
           width: width,
         },
         customStyles,
@@ -51,10 +53,10 @@ export const PrimaryButton: FC<PrimaryButtonProps> = ({
       {isLoading ? (
         <ActivityIndicator color={textColor} />
       ) : (
-        <CustomText.RegularText
+        <CustomText.LargeSemiBoldText
           customStyle={{color: textColor, fontSize: FontType.FontMedium}}>
           {title}
-        </CustomText.RegularText>
+        </CustomText.LargeSemiBoldText>
         // <Text style={{ color: textColor }}>{title}</Text>
       )}
     </TouchableOpacity>

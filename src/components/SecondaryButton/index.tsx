@@ -49,8 +49,10 @@ export const SecondaryButton: FC<PrimaryButtonProps> = ({
     style={[
       styles.buttonContainer,
       {
-        backgroundColor: disabled ? Utills.selectedThemeColors().TextInputPlaceholserColor : color,
-    // borderColor: Utills.selectedThemeColors().TextInputBorderColor,
+        backgroundColor: disabled
+          ? Utills.selectedThemeColors().TextInputPlaceholserColor
+          : color,
+        // borderColor: Utills.selectedThemeColors().TextInputBorderColor,
         width: width,
       },
       customStyles,
@@ -88,13 +90,13 @@ export const SecondaryButton: FC<PrimaryButtonProps> = ({
           // borderColor: 'red',
           width: '70%',
         }}>
-        <CustomText.RegularText
+        <CustomText.MediumText
           customStyle={{
             color: textColor,
             fontSize: FontType.FontMedium,
           }}>
           {title}
-        </CustomText.RegularText>
+        </CustomText.MediumText>
 
         {/* // <Text style={{ color: textColor }}>{title}</Text> */}
       </View>
